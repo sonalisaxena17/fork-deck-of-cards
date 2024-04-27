@@ -283,6 +283,8 @@ def shuffle_pile(request, key, pile):
 
     piles = {}
     random.shuffle(deck.piles[pile])
+    # Added below print statement on line 287
+    print(piles)
     deck.save()
 
     for k in deck.piles:  # iterate through all the piles and get the count.
